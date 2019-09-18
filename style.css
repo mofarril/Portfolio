@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Eczar:400,600|Gentium+Basic:400,700&display=swap');
+
+body{
+    overflow-x: hidden;
+    font-family: 'Gentium Basic', serif;
+    font-family: 'Eczar', serif;
+    color:rgb(38, 59, 70);
+    padding-top: 60px;
+    
+}
+.offset:before{
+    display:block;
+    content: "";
+    height: 4rem;
+    margin-top: -4rem;
+}
+/*NAV*/
+.navbar{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    background-color:rgb(38, 59, 70) !important; 
+}
+.navbar-brand img{
+    height: 60px;
+    width:60px;
+  
+}
+.navbar-nav li {
+    padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .navbar-link {
+    color:rgb(255, 255, 255); 
+    padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .navbar-link.active,
+.navbar-dark .navbar-nav .navbar-link:hover {
+    color: #9B7953!important; 
+}
+/*---Landing PG---*/
+.home-inner img {
+    background-image: cover;
+}
+
+.caption {
+    width:100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index:1;
+    color:rgb(38, 59, 70);
+    text-transform: uppercase;
+    }
+.caption h1{
+    font-optical-sizing: 3.8rem;
+    font: weight 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem grey; 
+    padding-bottom: 1rem; 
+    margin-left: 40%;
+    margin-top: 10%
+}
+.caption h3{
+    font-size: 2rem; 
+    text-shadow: .1rem .1rem .5rem grey;
+    padding-bottom: 1.6rem; 
+    margin-left: 40%;
+}
+.btn-lg{
+    border-width: medium; 
+    padding: .6rem 1.3rem;
+    font-size: 1.1rem;
+    color:rgb(38, 59, 70) !important;
+    margin-left: 40%;
+}
+
+/*About me  SECT*/
+
+.narrow{
+    width:75%;  
+    margin:1rem auto;
+    padding-top: 2rem; 
+    }
+.narrow h1{
+    
+    font-size: 2.4rem;
+}
+.btn-secondary{
+    border-width: medium;
+    text-transform:uppercase;
+    font-size: 1.2rem;
+    padding: .6rem 1.2rem;
+    margin: 1rem;
+    color: rgb(219, 219, 219); 
+    background-color: rgb(38, 59, 70);
+}
+.btn-secondary:hover{
+
+    color: rgb(219, 219, 219); 
+    background-color: #9B7953;
+}
+.col-8{
+    margin:auto;
+}
+.col-4 img{
+
+    width:70%;
+    border-radius: 30%;
+    height: 85%;
+    padding: 1rem;
+    margin: auto;
+  
+}
+/*start of features/portfolio css*/
+
+.jumbotron{
+    margin: 0px;
+    padding: 2rem 3.5rem;
+    border-radius: 0;
+        
+}
+h3.heading{
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+}
+.heading-underline{
+    width:3rem; 
+    height:.2rem;
+    background-color: #9B7953;
+    margin: 0 auto 2rem;
+}
+.feature svg.svg-inline--fa{
+    color:#9B7953;
+}
+.feature h3{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-bottom:  .4rem;
+}
+.feature p{
+font-size: 1.1rem;
+}
+
+.feature img{
+    height:200px;
+    width:200px;
+    border: 1rem solid rgb(38, 59, 70);
+    margin-bottom: .9rem;
+}
+
+/*RESOURCE CSS*/
+#resources img{ 
+    z-index: -4;
+}
+.dark {
+    background-color: rgba(0, 0, 0, 0.795);
+    color: rgb(219,219,219);
+    padding: 7rem 2rem;
+    z-index: 4;
+}
+.fixed-background h3{
+    margin-bottom:2rem;
+}
+.fixed-background p{
+    margin-top: 1.5rem;
+}
+
+/*OTHER/CLIENTS SEC CSS*/
+.clients img{
+
+    width:100%;
+    border-radius: 50%;
+}
+
+blockquote .svg-inline--fa{
+    color: rgb(38, 59, 70) !important;
+    margin: 1rem;
+    }
+.clients-hr{
+    border-top:.05rem solid;
+}
+
+/* Contact SEC CSS */
+#contact-form{
+    margin: 2rem; 
+}
+footer {
+    background-color: #9B7953;
+    color: rgb(219, 219, 219); 
+    padding: 2rem 0 2rem;
+    margin-top: 1rem; 
+}
+
+footer img{
+    height: 4rem;
+    margin: 1.5rem 0;
+}
+
+footer a {
+    color: rgb(219,219,219);
+}
+footer .svg-inline--fa{
+    font-size: 1.6rem;
+    margin: 1.2rem .5rem 0 0;
+}
+footer.svg-inline--fa:hover {
+    color: rgb(219, 219, 219);
+}
+hr.socket{
+    width:100%;
+    border-top: .2rem solid rgb(219, 219, 219);
+    margin-top: 3rem;
+}
+/*MEDIA QUERIES*/
+@media (max-width: 767px){
+    .caption h1{
+        font-size: 2.3rem; 
+        letter-spacing: .15rem;      
+        padding-bottom: .5rem; 
+    }
+    .caption h3{
+        font-size: 1.2rem; 
+        padding-bottom: 1.2rem; 
+    }
+    .btn-lg{
+        padding: .5rem 1rem;
+        font-size: 1rem;
+    }
+    .narrow h1{
+        font-size:1.5rem;
+    }
+    .clients img{
+        width:50%;
+        display:block;
+        margin: 0 auto;        
+    }
+}
