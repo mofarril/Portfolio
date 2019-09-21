@@ -56,14 +56,14 @@ body{
     font-optical-sizing: 3.8rem;
     font: weight 700;
     letter-spacing: .3rem;
-    text-shadow: .1rem .1rem .8rem grey; 
+    text-shadow: .1rem .1rem .8rem rgb(201, 200, 200); 
     padding-bottom: 1rem; 
     margin-left: 40%;
     margin-top: 10%
 }
 .caption h3{
     font-size: 2rem; 
-    text-shadow: .1rem .1rem .5rem grey;
+    text-shadow: .1rem .1rem .5rem rgb(201, 200, 200);
     padding-bottom: 1.6rem; 
     margin-left: 40%;
 }
@@ -188,7 +188,7 @@ blockquote .svg-inline--fa{
     margin: 2rem; 
 }
 footer {
-    background-color: #9B7953;
+    background-image: url("./images/apple-cup-desk-7974//(1/).jpg");
     color: rgb(219, 219, 219); 
     padding: 2rem 0 2rem;
     margin-top: 1rem; 
