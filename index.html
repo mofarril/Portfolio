@@ -37,9 +37,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#skills">Skills</a>
                     </li>
-                    <li class="nav-item">
+                    <!--<li class="nav-item">
                         <a class="nav-link" href="#other">Other</a>
-                    </li>
+                    </li>-->
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
@@ -51,7 +51,7 @@
         <!--Start Landing PAGE-->
         <div class="landing">
             <div class="home-wrap">
-                <div class="home-inner"><img src="./images/blur-bottle-bright-273238.jpg">
+                <div class="home-inner"><img class="img-fluid" src="./images/blur-bottle-bright-273238.jpg">
                 </div>
             </div>
             <div class="caption text-center">
@@ -64,17 +64,25 @@
         <!--End Home Section-->
 
         <!--Start aboutMe Section-->
-        <div id="aboutMe" class="offset">
-                <div class="row">
-            <div class="col-8 text-center">
-                <h1>About Me</h1>
-                <p class="lead">My name is Madison. I am an aspiring web developer and designer curently located in
-                    Charlotte, NC. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim optio recusandae rem officiis aliquam voluptatibus fugiat laudantium accusantium saepe. Sint aut temporibus id fugiat molestias perspiciatis maxime repellendus vel tempora?</p>
-                <a class="btn btn-secondary bt-md" href="#contact" target="_blank">Connect</a>
+        <div id="aboutMe" class="container" class="offset">
+            <div class="col-12 text-left">
+                <h2 class="heading">About Me</h2>
+
             </div>
-            <div class="col-4 ">
-                <img src="images/IMG_20190529_095541.jpg">
-            </div>
+            <div class="row">
+                <div class="col-sm-9 text-center">
+                    <p class="lead">My name is Madison. I am originally from Birmingham, AL where I attended the
+                        University of Alabama at Birmingham. I realized as I was nearly finished with my bachelor's
+                        degree, a career in Anthropology was not
+                        what I'd imagined. Fast-forward years later my husband and I relocated to Charlotte, NC and I
+                        have been able to fulfill my dream of becoming a full stack web developer.</p>
+                    <a class="btn btn-secondary bt-md" href="#contact" target="_blank">Connect</a>
+                    <a class="btn btn-secondary bt-md" href="Resume.pdf" target="_blank">Resume PDF</a>
+                </div>
+                <div class="col-sm-3">
+                    <img src="images/IMG_20190529_095541.jpg" height="340px" width="175px" class="fluid"
+                        alt="image of MOW">
+                </div>
             </div>
         </div>
         <!--End aboutMe Section-->
@@ -92,36 +100,48 @@
                         <div class="col-md-3">
                             <div class="feature">
                                 <!--<i class="fas fa-play-circle fa-4x" data-fa-transform="shrink-3 up-5"></i>-->
-                                <a href="https://mofarril.github.io/unit-4-game/"><img src="images/Gems.PNG"></a>
-                                <h3>Crystals Collector</h3>
-                                <p>Click the assorted crystals and try to match the exact total.</p>
+                                <a href="http://macklist.herokuapp.com/"><img src="images/macklist.PNG"></a>
+                                <a href="https://github.com/mofarril/MackList" target="_blank"><i class="fab fa-github"></i></a>
+                                <h3>Macklist</h3>
+                                <p>Shop new and gently used goods in your area.</p>
+                                
+
                             </div>
                         </div>
                         <div class="col-md-3">
-                                <div class="feature">
-                                    <!--<i class="fas fa-play-circle fa-4x" data-fa-transform="shrink-3 up-5"></i>-->
-                                    <a href="https://mofarril.github.io/TrainScheduler/"> <img src="images/train.PNG"> </a>
-                                    <h3>Train Times</h3>
-                                    <p>Fill in the forms and behold the magic of Firebase.</p>
-                                </div>
-                            </div>
-                        <div class="col-md-3">
                             <div class="feature">
-                                    <a href="https://mofarril.github.io/Project-One/"><img src="images/Peruse.PNG"></a>
-                               <!--<i class="fas fa-sliders-h fa-4x" data-fa-transform="shrink-4.5 up-4.5"></i>-->
+                                <a href="https://mofarril.github.io/Project-One/"><img src="images/Peruse.PNG"></a>
+                                <!--<i class="fas fa-sliders-h fa-4x" data-fa-transform="shrink-4.5 up-4.5"></i>-->
+                                <a href="https://github.com/mofarril/Project-One" target="_blank"><i
+                                    class="fab fa-github"></i></a>
                                 <h3>Peruse for Brews</h3>
                                 <p>Allow the app to use your location to find up to five breweries close to you.</p>
+                                
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="feature">
-                                   <a href="https://mofarril.github.io/TrivialTrivia/"><img src="images/trivialTrivia.png"></a>
+                                <a href="https://dogclicky.herokuapp.com/"><img src="images/clicky.PNG"></a>
                                 <!--<i class="fab fa-wpforms fa-4x" data-fa-transform="shrink-4 up-5"></i>-->
-                                <h3>Trivial Trivia</h3>
-                                <p>Get into my headspace, and answer 10 timed questions to win.</p>
+                                <a href="https://github.com/mofarril/ClickyGame" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                                <h3>Clicky Game</h3>
+                                <p>Click the doggos and try to get to 12.</p>
+                               
                             </div>
                         </div>
-
+                        <div class="col-md-3">
+                            <div class="feature">
+                                <a href="https://burger-eaten.herokuapp.com/"><img src="images/BURGER.png"></a>
+                                <!--<i class="fab fa-wpforms fa-4x" data-fa-transform="shrink-4 up-5"></i>-->
+                                <a href="https://github.com/mofarril/BURGER" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                                <h3>EAT-DA-BURGERS </h3>
+                                <p>Create a burger to eat and then devour it! By the power of SQL keep track of those
+                                    burgers.</p>
+                                    
+                            </div>
+                        </div>
                     </div>
                     <!--END Row-->
 
@@ -139,30 +159,59 @@
                             <h3 class="heading">Skills</h3>
                             <div class="heading-underline"></div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <h3>HTML 5</h3>
                             <div class="feature">
                                 <i class="fas fa-code fa-3x"></i>
                             </div>
-                            <p class="lead">Content coming soon.</p>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <h3>Bootstrap 4</h3>
                             <div class="feature">
                                 <i class="fas fa-bold fa-3x"></i>
                             </div>
-                            <p class="lead">Content coming soon.</p>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <h3>Css</h3>
                             <div class="feature">
                                 <i class="fab fa-css3 fa-3x"></i>
                             </div>
-                            <p class="lead">Content coming soon.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <h3>JavaScript</h3>
+                            <div class="feature">
+                                <i class="fab fa-js-square fa-3x"></i>
+                            </div>
                         </div>
 
+                        <div class="col-md-3">
+                            <h3>React</h3>
+                            <div class="feature">
+                                <i class="fab fa-react fa-4x"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h3>Node JS & Express</h3>
+                            <div class="feature">
+                                <i class="fab fa-node fa-3x"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h3>SQL</h3>
+                            <div class="feature">
+                                <i class="fas fa-database fa-3x"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h3>RESTful Web Services</h3>
+                            <div class="feature">
+                                <i class="fas fa-phone fa-3x"></i>
+                            </div>
+                        </div>
 
                     </div>
+
                     <!--ROW DARK ENDS-->
                     <div class="fixed-wrap">
                         <div class="fixed"></div>
@@ -172,9 +221,9 @@
             </div>
             <!--End resource Section-->
             <!--Start clients/ other Section-->
-           <div id="other" class="offset">
-             
-                <!--Start of JUMBO-->
+            <div id="other" class="offset">
+
+                <!--Start of JUMBO
                 <div class="jumbotron">
                     <div class="col-12 text-center">
                         <h3 class="heading">MORE STUFF</h3>
@@ -192,13 +241,13 @@
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aliquid eos
                                         praesentium molestiae a obcaecati dicta autem itaque. Quis culpa totam
                                         exercitationem et possimus architecto cum beatae optio consequatur laudantium.
-                                        <hr class="clients-hr">
-                                       <!--<cite> &#8212; NAME NAME</cite>-->
+                                        <hr class="clients-hr">-->
+                                        <!--<cite> &#8212; NAME NAME</cite>
                                     </blockquote>
                                 </div>
                             </div>
                         </div>
-                       <!-- <div class="col-md-6 clients">
+                        <div class="col-md-6 clients">
                             <div class="row">
                                 <div class="col-md-4">
                                     <img src="images/blur-bottle-bright-273238.jpg">
@@ -213,84 +262,85 @@
                                         <cite> &#8212; NAME NAME</cite>
                                     </blockquote>
                                 </div>
-                            </div>-->
-                        </div>
-                    </div>
-                    <!--END CLIENTS JUMBO-->
-                    <div class="col-12 narrow text-center">
-                        <p class="lead">Want to work together?</p>
-                       <!-- <a class="btn btn-secondary bt-md" href="#" target="_blank">LINK</a>
+                            </div>
                     </div>
                 </div>-->
-                <!--End clients Section-->
-            </div>
-            <!--Start contact Section-->
-            <div id="contact" class="offset">
-                <section id="contact-us">
-                    <div class="wrap">
-                        <!--left pannel start-->
-                        <div class="pannel-left">
-                            <form id="contact-form" method="post" action="contact.php" role="form">
-                                <!--Start Contact Form-->
-                                <div class="messages"></div>
+                <!--END CLIENTS JUMBO-->
+                <div class="col-12 narrow text-center">
+                    <p class="lead">Want to work together?</p>
+                    <!-- <a class="btn btn-secondary bt-md" href="#" target="_blank">LINK</a>
+                    </div>
+                </div>-->
+                    <!--End clients Section-->
+                </div>
+                <!--Start contact Section-->
+                <div id="contact" class="offset">
+                    <section id="contact-us">
+                        <div class="wrap">
+                            <!--left pannel start-->
+                            <div class="pannel-left">
+                                <form id="contact-form" method="POST" action="https://formspree.io/mgeakzpw" role="form">
+                                    <!--Start Contact Form-->
+                                    <div class="messages"></div>
 
-                                <div class="controls">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="form_name">NAME</label>
-                                                <input id="form_name" type="text" name="name" class="form-control"
-                                                    placeholder="Please enter your name" required="required"
-                                                    data-error="Firstname is required.">
-                                                <div class="help-block with-errors"></div>
+                                    <div class="controls">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_name">NAME</label>
+                                                    <input id="form_name" type="text" name="name" class="form-control"
+                                                        placeholder="Please enter your name" required="required"
+                                                        data-error="Firstname is required.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_email">EMAIL </label>
+                                                    <input id="form_email" type="email" name="email"
+                                                        class="form-control" placeholder="Please enter your email"
+                                                        required="required" data-error="Valid email is required.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="form_message">MESSAGE</label>
+                                                    <textarea id="form_message" name="message" class="form-control"
+                                                        placeholder="Message" rows="4" required="required"
+                                                        data-error="Please, leave us a message."></textarea>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <input type="text" name="_gotcha" style="display:none"/>
+                                            <div class="col-md-6">
+                                                <input type="submit" class="btn btn-secondary btn-send"
+                                                    value="Send message">
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="form_email">EMAIL </label>
-                                                <input id="form_email" type="email" name="email" class="form-control"
-                                                    placeholder="Please enter your email" required="required"
-                                                    data-error="Valid email is required.">
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label for="form_message">MESSAGE</label>
-                                                <textarea id="form_message" name="message" class="form-control"
-                                                    placeholder="Message" rows="4" required="required"
-                                                    data-error="Please, leave us a message."></textarea>
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="submit" class="btn btn-secondary btn-send"
-                                                value="Send message">
-                                        </div>
+
                                     </div>
 
-                                </div>
-
-                            </form>
-             <!--End contact form-->
-                            <footer>
-                                <div class="row justify-content-center">
-                                    <div class="col-md-9 text-center">
-                                        <img src="./images/updatedLoGo200X200.png">
-                                        <strong>Contact Info</strong>
-                                        <p>(205) 370-0276<br> mofarril.mof@gmail.com</p>
-                                        <a href="https://www.linkedin.com/in/madison-o-farril-a0b5b911b/"
-                                            target="_blank"><i class="fab fa-linkedin"></i></a>
-                                        <a href="https://github.com/mofarril" target="_blank"><i
-                                                class="fab fa-github"></i></a>
-                                        <a href="https://twitter.com/mofarril" target="_blank"><i
-                                                class="fab fa-twitter"></i></a>
+                                </form>
+                                <!--End contact form-->
+                                <footer>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-9 text-center">
+                                            <img src="./images/updatedLoGo200X200.png">
+                                            <strong>Contact Info</strong>
+                                            <p>(205) 370-0276<br> mofarril.mof@gmail.com</p>
+                                            <a href="https://www.linkedin.com/in/madison-o-farril-a0b5b911b/"
+                                                target="_blank"><i class="fab fa-linkedin"></i></a>
+                                            <a href="https://github.com/mofarril" target="_blank"><i
+                                                    class="fab fa-github"></i></a>
+                                            <a href="https://twitter.com/mofarril" target="_blank"><i
+                                                    class="fab fa-twitter"></i></a>
+                                        </div>
+                                        <hr class="socket"> &copy; Madison O'Farril-Williams
                                     </div>
-                                    <hr class="socket"> &copy; Madison O'Farril-Williams
-                                </div>
-                            </footer>
-                        </div>
-                        <!--End contact Section-->
+                                </footer>
+                            </div>
+                            <!--End contact Section-->
 
 
 </body>

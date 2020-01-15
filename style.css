@@ -73,18 +73,24 @@ body{
     font-size: 1.1rem;
     color:rgb(38, 59, 70) !important;
     margin-left: 40%;
+    background-color: rgba(219, 219, 219, 0.363);
+    text-shadow: 1px 1px rgb(219, 219, 219);
 }
-
 /*About me  SECT*/
 
 .narrow{
     width:75%;  
-    margin:1rem auto;
+    margin:2rem auto;
     padding-top: 2rem; 
     }
-.narrow h1{
+.narrow h2{
     
-    font-size: 2.4rem;
+        font-size: 2.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 1.9rem;
+        color: rgb(219, 219, 219);
+        padding-top: 4rem;
 }
 .btn-secondary{
     border-width: medium;
@@ -100,17 +106,20 @@ body{
     color: rgb(219, 219, 219); 
     background-color: #9B7953;
 }
-.col-8{
+.col-9{
     margin:auto;
+    padding:1rem;
+    width:30%;
 }
-.col-4 img{
-
-    width:70%;
-    border-radius: 30%;
+.col-sm-3 {
+    padding-left: 7%;
+}
+.col-sm-3 img{
+    
+    
     height: 85%;
-    padding: 1rem;
-    margin: auto;
-  
+    border-radius: 35%;
+     
 }
 /*start of features/portfolio css*/
 
@@ -119,6 +128,16 @@ body{
     padding: 2rem 3.5rem;
     border-radius: 0;
         
+}
+h2.heading{
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+    color: rgb(255, 254, 254);
+    padding-top: .5rem;
+    margin-top: 4rem;
+    
 }
 h3.heading{
     font-size: 1.9rem;
@@ -148,10 +167,15 @@ font-size: 1.1rem;
     height:200px;
     width:200px;
     border: 1rem solid rgb(38, 59, 70);
-    margin-bottom: .9rem;
+    margin-bottom: 2rem;
+}
+.col-sm-3 img{
+    
+    margin:auto;
+    border-radius: 10rem;
 }
 
-/*RESOURCE CSS*/
+/*Skills CSS*/
 #resources img{ 
     z-index: -4;
 }
