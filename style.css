@@ -2,11 +2,8 @@
 
 body{
     overflow-x: hidden;
-    font-family: 'Gentium Basic', serif;
-    font-family: 'Eczar', serif;
-    color:rgb(38, 59, 70);
-    padding-top: 60px;
-    
+    font-family: 'Eczar', serif !important;
+    color:rgb(38, 59, 70);   
 }
 .offset:before{
     display:block;
@@ -14,7 +11,7 @@ body{
     height: 4rem;
     margin-top: -4rem;
 }
-/*NAV*/
+/*NAV (1 rem = 16px)*/
 .navbar{
     text-transform: uppercase;
     font-weight: 700;
@@ -23,8 +20,8 @@ body{
     background-color:rgb(38, 59, 70) !important; 
 }
 .navbar-brand img{
-    height: 70px;
-    width:70px;
+    height: 3.8rem;
+    width:3.8rem;
   
 }
 .navbar-nav li {
@@ -40,14 +37,15 @@ body{
 }
 /*---Landing PG---*/
 .home-inner img {
-    background-image: cover;
+    object-fit: cover;
+    
 }
 
 .caption {
     width:100%;
     max-width: 100%;
     position: absolute;
-    top: 38%;
+    top: 39%;
     z-index:1;
     color:rgb(38, 59, 70);
     text-transform: uppercase;
@@ -55,26 +53,42 @@ body{
 .caption h1{
     font-optical-sizing: 3.8rem;
     font: weight 700;
-    letter-spacing: .3rem;
-    text-shadow: .1rem .1rem .8rem rgb(201, 200, 200); 
+    letter-spacing: .2rem;
+    text-shadow: .1rem .1rem .8rem rgb(0,0,0); 
     padding-bottom: 1rem; 
     margin-left: 40%;
-    margin-top: 10%
+    margin-top: 10%;
+    
 }
 .caption h3{
     font-size: 2rem; 
-    text-shadow: .1rem .1rem .5rem rgb(201, 200, 200);
+    text-shadow: .1rem .1rem .5rem rgb(104, 103, 103);
     padding-bottom: 1.6rem; 
     margin-left: 40%;
+    
 }
 .btn-lg{
     border-width: medium; 
     padding: .6rem 1.3rem;
     font-size: 1.1rem;
+    color:#9B7953 !important;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    margin-left: 40%;
+    background-color: rgba(219, 219, 219, 0);
+    text-shadow: 1px 1px rgb(219, 219, 219);
+    
+}
+
+.btn-lg:hover{
+    border-width: medium; 
+    padding: .6rem 1.3rem;
+    letter-spacing: .3rem;
+    font-size: 1.1rem;
     color:rgb(38, 59, 70) !important;
     margin-left: 40%;
-    background-color: rgba(219, 219, 219, 0.363);
-    text-shadow: 1px 1px rgb(219, 219, 219);
+    background-color: #9B7953;
+   
 }
 /*About me  SECT*/
 
@@ -117,10 +131,19 @@ body{
 .col-sm-3 img{
     
     
-    height: 85%;
-    border-radius: 35%;
-     
-}
+width: 100%;
+    
+height: 100%;
+    
+object-fit: contain;
+    
+/* margin: unset; */
+    
+margin-top: -30%;
+    
+border-radius: 10%;
+}    
+
 /*start of features/portfolio css*/
 
 .jumbotron{
@@ -172,11 +195,7 @@ font-size: 1.1rem;
     border: 1rem solid rgb(38, 59, 70);
     margin-bottom: 2rem;
 }
-.col-sm-3 img{
-    
-    margin:auto;
-    border-radius: 10rem;
-}
+
 
 /*Skills CSS*/
 #resources img{ 
@@ -215,6 +234,10 @@ blockquote .svg-inline--fa{
     margin: 2rem; 
     margin-bottom:0;
 }
+p.lead  {
+    font-weight: 700;
+    letter-spacing: .2rem;
+}
 footer {
     background-image: url("./images/apple-cup-desk-7974//(1/).jpg");
     color: rgb(219, 219, 219); 
@@ -245,15 +268,40 @@ hr.socket{
     margin-top: 3rem;
 }
 /*MEDIA QUERIES*/
+
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (max-width: 693px) {
+    .caption h1{
+        font-size: 1.8rem; 
+        letter-spacing: .1rem;      
+        padding-bottom: .5rem; 
+    }
+    .caption h3{
+        font-size: .9rem; 
+        padding-bottom: .9rem; 
+    }
+    .btn-lg{
+        padding: .2rem .5rem;
+        font-size: .7rem;
+    }
+    .narrow h1{
+        font-size:1.5rem;
+    }
+  }
+
+ /* Medium devices (landscape tablets, 768px and up) */
 @media (max-width: 767px){
     .caption h1{
         font-size: 2.3rem; 
         letter-spacing: .15rem;      
         padding-bottom: .5rem; 
+        position: relative;
     }
     .caption h3{
         font-size: 1.2rem; 
         padding-bottom: 1.2rem; 
+        
     }
     .btn-lg{
         padding: .5rem 1rem;
@@ -267,4 +315,14 @@ hr.socket{
         display:block;
         margin: 0 auto;        
     }
-}
+}  
+
+/* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    
+  } 
+  
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    
+  }
