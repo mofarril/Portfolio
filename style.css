@@ -3,7 +3,7 @@
 body{
     overflow-x: hidden;
     font-family: 'Eczar', serif !important;
-    color:rgb(38, 59, 70);   
+    background: burlywood;   
 }
 .offset:before{
     display:block;
@@ -38,7 +38,7 @@ body{
 /*---Landing PG---*/
 .home-inner img {
     object-fit: cover;
-    
+    min-width: 100% !important;
 }
 
 .caption {
@@ -58,7 +58,7 @@ body{
     padding-bottom: 1rem; 
     margin-left: 40%;
     margin-top: 10%;
-    
+    color: #fff;
 }
 .caption h3{
     font-size: 2rem; 
@@ -317,12 +317,24 @@ hr.socket{
     }
 }  
 
-/* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    
-  } 
+html {
+    font-size: 1rem;
+  }
   
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1.6rem;
+    }
   }
